@@ -1,0 +1,42 @@
+﻿@model TrabalhoMarcos.Models.Produto
+
+@{
+    ViewData["Title"] = "..::CadastroProduto::..";
+    Layout = "~/Views/Shared/_NossoLayout.cshtml";
+}
+
+@* CODIGO DO FORMULARIO *@
+<br />
+<br />
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1>Cadastro Produto</h1>
+        </div>
+    </div>
+    <form method="post">
+        @* LINHA DE INFORMAÇÕES *@
+
+        <div class="row">
+            <div class="col">
+                <label asp-for="NomeProduto" class="col-sm-2 col-form-label fw-bold"></label>
+                <input asp-for="NomeProduto" class="form-control" itemid="NomeProduto" type="text" />
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="Preco" class="col-form-label fw-bold"></label>
+                <input asp-for="Preco" class="form-control" id="Preco" type="text" />
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="TipoProd" class="col-form-label fw-bold"></label>
+                <input asp-for="TipoProd" class="form-control" id="TipoProd" type="text" />
+            </div>
+            <div class="row mt-3 justify-content-md-end">
+                <div class="col-3 align-content-end ">
+                    <input type="submit" class="btn btn-outline-info btn-lg" name="name" value="Cadastrar" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
